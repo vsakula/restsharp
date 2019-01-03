@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="974f317c-03de-41f0-a228-dc4cadd971c9" name="v-SAkula@RBHQSAKULA-L 2018-12-27 10:29:51" runUser="RBCorp\v-SAkula" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2018-12-27T10:29:51.0338543-06:00" queuing="2018-12-27T10:29:51.0338543-06:00" start="2018-12-27T10:29:48.6231408-06:00" finish="2018-12-27T10:29:51.6337020-06:00" />
+  <TestSettings name="default" id="f5f6c781-b6ab-43f1-af4f-4ef87616c2ef">
+    <Deployment runDeploymentRoot="v-SAkula_RBHQSAKULA-L_2018-12-27_10_29_51" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="01d5c765-de53-4db2-9175-fca99c2c19a9" testId="11196ce0-e244-53b4-413b-003bda55f553" testName="CustomerServiceProject.CustomerService.RefundCalculate" computerName="RBHQSAKULA-L" duration="00:00:00.9750000" startTime="2018-12-27T10:29:51.5219723-06:00" endTime="2018-12-27T10:29:51.5219727-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01d5c765-de53-4db2-9175-fca99c2c19a9">
+      <Output>
+        <StdOut>RefundCalculate Request: RestSharp.RestRequest&#xD;
+RefundCalculate Response : {"Success":true,"Error":null,"Items":[{"DiscID":15943220,"Type":"rental","Refund":1.0,"TaxRate":6.0000,"Tax":0.0600,"IsRental":true,"IsPurchase":false}],"RentalTaxAmount":0.0600,"PurchaseTaxAmount":0.0,"Tax":0.0600,"ServiceFeeAmount":0.0,"ServiceFeeTaxAmount":0.0,"TransactionClosed":true,"Limit":0.0,"Total":1.0600}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0f47d2e8-28b6-44ef-9bc0-f18b28e1efb3" testId="e73e12a3-3bc4-9369-6591-465d2ea06de2" testName="CustomerServiceProject.CustomerService.GetCustomerProfileAccountStatus" computerName="RBHQSAKULA-L" duration="00:00:00.0200000" startTime="2018-12-27T10:29:50.5464338-06:00" endTime="2018-12-27T10:29:50.5464338-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f47d2e8-28b6-44ef-9bc0-f18b28e1efb3">
+      <Output>
+        <StdOut>GetCustomerProfileAccountStatus Request: http://qaintcustomerservices/Account.svc/status/41928298188700&#xD;
+GetCustomerProfileAccountStatus Response : {"AccountStatusReason":"Not Set","ActivationDate":"8\/3\/2015 7:46:16 PM","CardHolderName":null,"CardType":"Redbox","CcLast4":"0869","CustomerProfileAccountNumber":"41928298188700","CustomerProfileNumber":"12319817003262","EmailAddress":"APITest20171110102113@Outerwall.com","IsDefault":true,"IsFinanciallyClosed":false,"LastName":null,"LegacyCustomerId":153010,"NumberOfDiscsRented":"3","RedboxCardAccountType":"Physical","Status":"Open","WasFound":true,"ZipCode":null}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2abe360f-ca7c-4639-be1c-eb7925d6a6eb" testId="cc9bed71-378a-ebe2-fe57-57da5b9b3e0d" testName="CustomerServiceProject.CustomerService.GetLegacyCustomer" computerName="RBHQSAKULA-L" duration="00:00:00.1530000" startTime="2018-12-27T10:29:50.5299132-06:00" endTime="2018-12-27T10:29:50.5299136-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2abe360f-ca7c-4639-be1c-eb7925d6a6eb">
+      <Output>
+        <StdOut>GetLegacyCustomer Request: http://qaintcustomerservices/Account.svc/legacyCustomer/153010&#xD;
+GetLegacyCustomer Response: {"AccountStatusReason":"Not Set","ActivationDate":"8\/3\/2015 7:46:16 PM","CardHolderName":null,"CardType":"Redbox","CcLast4":"0869","CustomerProfileAccountNumber":"41928298188700","CustomerProfileNumber":"12319817003262","EmailAddress":"APITest20171110102113@Outerwall.com","IsDefault":true,"IsFinanciallyClosed":false,"LastName":null,"LegacyCustomerId":153010,"NumberOfDiscsRented":"3","RedboxCardAccountType":"Physical","Status":"Open","WasFound":true,"ZipCode":null}</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CustomerServiceProject.CustomerService.RefundCalculate" storage="c:\users\v-sakula\documents\tfs\postman_test\xunittestproject1\xunittestproject1\bin\debug\netcoreapp2.2\customerservice.dll" id="11196ce0-e244-53b4-413b-003bda55f553">
+      <Execution id="01d5c765-de53-4db2-9175-fca99c2c19a9" />
+      <TestMethod codeBase="C:\Users\v-sakula\Documents\TFS\Postman_Test\XUnitTestProject1\XUnitTestProject1\bin\Debug\netcoreapp2.2\CustomerService.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CustomerService" name="CustomerServiceProject.CustomerService.RefundCalculate" />
+    </UnitTest>
+    <UnitTest name="CustomerServiceProject.CustomerService.GetCustomerProfileAccountStatus" storage="c:\users\v-sakula\documents\tfs\postman_test\xunittestproject1\xunittestproject1\bin\debug\netcoreapp2.2\customerservice.dll" id="e73e12a3-3bc4-9369-6591-465d2ea06de2">
+      <Execution id="0f47d2e8-28b6-44ef-9bc0-f18b28e1efb3" />
+      <TestMethod codeBase="C:\Users\v-sakula\Documents\TFS\Postman_Test\XUnitTestProject1\XUnitTestProject1\bin\Debug\netcoreapp2.2\CustomerService.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CustomerService" name="CustomerServiceProject.CustomerService.GetCustomerProfileAccountStatus" />
+    </UnitTest>
+    <UnitTest name="CustomerServiceProject.CustomerService.GetLegacyCustomer" storage="c:\users\v-sakula\documents\tfs\postman_test\xunittestproject1\xunittestproject1\bin\debug\netcoreapp2.2\customerservice.dll" id="cc9bed71-378a-ebe2-fe57-57da5b9b3e0d">
+      <Execution id="2abe360f-ca7c-4639-be1c-eb7925d6a6eb" />
+      <TestMethod codeBase="C:\Users\v-sakula\Documents\TFS\Postman_Test\XUnitTestProject1\XUnitTestProject1\bin\Debug\netcoreapp2.2\CustomerService.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CustomerService" name="CustomerServiceProject.CustomerService.GetLegacyCustomer" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="11196ce0-e244-53b4-413b-003bda55f553" executionId="01d5c765-de53-4db2-9175-fca99c2c19a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e73e12a3-3bc4-9369-6591-465d2ea06de2" executionId="0f47d2e8-28b6-44ef-9bc0-f18b28e1efb3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc9bed71-378a-ebe2-fe57-57da5b9b3e0d" executionId="2abe360f-ca7c-4639-be1c-eb7925d6a6eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.0 (64-bit .NET Core 4.6.27110.04)[xUnit.net 00:00:00.68]   Discovering: CustomerService[xUnit.net 00:00:00.73]   Discovered:  CustomerService[xUnit.net 00:00:00.74]   Starting:    CustomerService[xUnit.net 00:00:02.03]   Finished:    CustomerService</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
